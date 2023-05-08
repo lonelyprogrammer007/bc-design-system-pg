@@ -1,0 +1,35 @@
+<bc-modal
+  #exampleModal
+  [typeIcon]="typeIcon"
+  [customWidth]="customWidth"
+  [titleAlign]="titleAlign"
+  [isCancellable]="action"
+  [subTitle]="subTitle"
+  [buttonAlignment]="buttonAlignment"
+  textBtn="Enviar invitación"
+  textBtnLeft="No"
+  typeNotify="success"
+  (stateClick)="onPressButton($event)"
+  class="modal"
+>
+  <div illustration class="modal__icon-container">
+    <bc-icon
+      aria-hidden="true"
+      name="add-user"
+      aria-label="prueba"
+      role="img"
+      width="150px"
+      class="modal__icon bc-md"
+    ></bc-icon>
+    <h4 class="modal-title-label">Invitar usuarios</h4>
+  </div>
+  <div modalContent>
+    <p class="bc-opensans-font-style-3-regular">
+      Escribe el correo electrónico de las personas que quieres invitar para que
+      hagan parte de
+      <span class="bc-opensans-font-style-3-semibold">Tu360Inmobiliario</span>.
+    </p>
+  </div>
+</bc-modal>
+
+<button (click)="openModal()">Open Modal</button>

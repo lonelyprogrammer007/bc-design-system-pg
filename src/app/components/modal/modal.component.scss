@@ -1,0 +1,36 @@
+.modal__icon-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal__icon {
+  width: 48px;
+  height: 48px;
+  background-color: #f5b6cd;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+:host
+  ::ng-deep
+  section
+  > section.bc-modal-title.bc-direction-row.bc-margin-top-2.bc-margin-bottom-2 {
+  margin: 0;
+}
+
+:host ::ng-deep section > section.bc-modal-button-container {
+  width: 100%;
+}
+
+:host ::ng-deep section > section.bc-modal-button-container > button {
+  font-size: 16px;
+  padding: 12px 24px;
+  width: 100%;
+  max-width: 100%;
+}
+// section.bc-modal-container[customWidth=medium]
+:host ::ng-deep section.bc-modal-container[customWidth=medium] {
+  width: 520px;
+}
